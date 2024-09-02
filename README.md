@@ -1,6 +1,9 @@
 <div style="background-color: #e0e5ec; min-height: 100vh; padding: 20px; font-family: Arial, sans-serif; color: #333;">
   <h2 align="left" style="color: #333; background-color: #f0f0f0; padding: 20px; border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);">Hi 👋! My name is Jayanth and I'm a Developer, Designer, Editor</h2>
 
+  <img src="https://camo.githubusercontent.com/2366b34bb903c09617990fb5fff4622f3e941349e846ddb7e73df872a9d21233/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966" width="450px" align="right" alt="Animated GIF" />
+
+
   <br/>
 
   <div align="center">
