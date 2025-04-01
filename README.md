@@ -76,6 +76,8 @@
       <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="telegram logo" style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
     </a>
   </div>
+  ![Profile Views](https://komarev.com/ghpvc/?username=Jayanth0124&label=Profile%20Views&color=ff69b4&style=flat-square)
 
   <br/>
 </div>
+
