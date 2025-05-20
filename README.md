@@ -21,9 +21,11 @@
       </p>
     </div>
     <!-- IMAGE SECTION (Centered when wrapped) -->
-    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 100%;">
-      <img src="https://www.jayanth.xyz/assets/img/j2.jpg" alt="Jayanth" height="200" style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
-    </div>
+    <p align="center">
+  <img src="https://www.jayanth.xyz/assets/img/j2.jpg" alt="Jayanth" height="200" />
+</p>
+
+
 
   </div>
 </div>
@@ -62,6 +64,15 @@
 [![Jayanth's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Jayanth0124&theme=github-compact&hide_border=true&radius=16&bg_color=151515&custom_title=My%20Activity%20Graph%20^_^&title_color=26a641)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=Jayanth0124&theme=gruvbox&margin-w=50&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+## 🐍 Contribution Graph
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/snake.svg" alt="Snake Game" />
+</p>
+
+---
+
 
 ## My Tech Stack
 <p align="center">
@@ -144,4 +155,5 @@
 <p align="center">
   <img src="https://camo.githubusercontent.com/ff1d4eb768b74fa335491dd8a7e87d95017665c1570e5a8828fddfdb728da450/68747470733a2f2f63617073756c652d72656e6465722e76657263656c2e6170702f6170693f747970653d776176696e6726636f6c6f723d6772616469656e74266865696768743d3130302673656374696f6e3d666f6f746572" alt="Waving Footer Capsule"/>
 </p>
+
 
