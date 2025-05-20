@@ -6,6 +6,9 @@
   <img src="https://komarev.com/ghpvc/?username=Jayanth0124&label=Profile%20Views&color=ff69b4&style=flat-square" alt="Profile Views">
 </div>
 
+<p align="center">
+  <img src="https://www.jayanth.xyz/assets/img/j2.jpg" height="200" />
+</p>
 
 <div style="background-color: #e0e5ec; min-height: 100vh; padding: 20px; font-family: Arial, sans-serif; color: #333;">
   <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
@@ -20,10 +23,8 @@
         As a passionate Front-End Developer, I specialize in building responsive, user-centric web interfaces using HTML, CSS, and JavaScript. I have hands-on experience developing interactive web applications—ranging from API-powered tools to AI-integrated platforms—while using frameworks like React and Vue to deliver dynamic, high-performance solutions. My skill set includes UI/UX design, Python, Firebase, and working with RESTful APIs. I’m committed to continuous learning, earning certifications, and building real-world projects to stay up to date with evolving technologies. I thrive in collaborative, agile environments and focus on writing clean, scalable, and accessible front-end code that enhances user experience.
       </p>
     </div>
-    <!-- IMAGE SECTION (Centered when wrapped) -->
-    <p align="center">
-  <img src="https://www.jayanth.xyz/assets/img/j2.jpg" alt="Jayanth" height="200" />
-</p>
+
+
 
 
 
