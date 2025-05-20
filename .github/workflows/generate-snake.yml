@@ -1,12 +1,16 @@
 name: Generate Snake Contribution Graph
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" # runs every day at midnight UTC
   workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Required for pushing to the output branch
+
     steps:
       - name: Generate snake.svg
         uses: Platane/snk@v3
@@ -14,6 +18,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/snake.svg
+
       - name: Push snake.svg to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
