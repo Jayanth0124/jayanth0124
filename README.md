@@ -1,7 +1,3 @@
-<table>
-<thead>
-<tr>
-<th>
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Jayanth%&fontSize=70&fontAlignY=35&animation=fadeIn" />
   
@@ -27,11 +23,6 @@
         As a passionate Front-End Developer, I specialize in building responsive, user-centric web interfaces using HTML, CSS, and JavaScript. I have hands-on experience developing interactive web applications—ranging from API-powered tools to AI-integrated platforms—while using frameworks like React and Vue to deliver dynamic, high-performance solutions. My skill set includes UI/UX design, Python, Firebase, and working with RESTful APIs. I’m committed to continuous learning, earning certifications, and building real-world projects to stay up to date with evolving technologies. I thrive in collaborative, agile environments and focus on writing clean, scalable, and accessible front-end code that enhances user experience.
       </p>
     </div>
-
-
-
-
-
   </div>
 </div>
 
@@ -47,10 +38,7 @@
 - 📚 Pursuing certifications and staying updated with the latest in web tech & AI innovation
 - 💡 Experimenting with Python-based automation and creating unique digital experiences
 
-
-
   <br/>
-  
 <table>
 <thead>
 <tr>
@@ -105,53 +93,43 @@
 ## Let's Connect
 
  <div align="center" style="margin-top: 20px;">
-
   <a href="https://www.instagram.com/jayanth.chowdary__/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge"
       height="35"
       alt="Instagram"
       style="margin: 8px; border-radius: 12px; box-shadow: 0 8px 20px rgba(228, 64, 95, 0.4);"/>
   </a>
-
   <a href="https://www.linkedin.com/in/jayanth-donavalli/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge"
       height="35"
       alt="LinkedIn"
       style="margin: 8px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 119, 181, 0.4);"/>
   </a>
-
   <a href="mailto:jayanthdonavalli0124@gmail.com" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge"
       height="35"
       alt="Gmail"
       style="margin: 8px; border-radius: 12px; box-shadow: 0 8px 20px rgba(209, 72, 54, 0.4);"/>
   </a>
-
   <a href="https://api.whatsapp.com/send/?phone=%2B917207288496&text&type=phone_number&app_absent=0" target="_blank">
     <img src="https://img.shields.io/static/v1?message=WhatsApp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge"
       height="35"
       alt="WhatsApp"
       style="margin: 8px; border-radius: 12px; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);"/>
   </a>
-
   <a href="https://www.facebook.com/jayanth0124" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge"
       height="35"
       alt="Facebook"
       style="margin: 8px; border-radius: 12px; box-shadow: 0 8px 20px rgba(24, 119, 242, 0.4);"/>
   </a>
-
   <a href="https://t.me/+917207288496" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge"
       height="35"
       alt="Telegram"
       style="margin: 8px; border-radius: 12px; box-shadow: 0 8px 20px rgba(44, 165, 224, 0.4);"/>
   </a>
-
 </div>
-
-
-
   <br/>
 </div>
 
@@ -161,7 +139,3 @@
   <img src="https://camo.githubusercontent.com/ff1d4eb768b74fa335491dd8a7e87d95017665c1570e5a8828fddfdb728da450/68747470733a2f2f63617073756c652d72656e6465722e76657263656c2e6170702f6170693f747970653d776176696e6726636f6c6f723d6772616469656e74266865696768743d3130302673656374696f6e3d666f6f746572" alt="Waving Footer Capsule"/>
 </p>
 
-</th>
-</tr>
-</thead>
-</table>
