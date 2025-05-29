@@ -133,7 +133,7 @@
   <br/>
 </div>
 
-<p align="center"> <a href="https://www.jayanth.xyz" target="_blank"> <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Click%20Here-blueviolet?style=for-the-badge&logo=Firefox" alt="Portfolio Badge"/> </a> </p>
+<p align="center"> <a href="https://www.jayanth.site" target="_blank"> <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Click%20Here-blueviolet?style=for-the-badge&logo=Firefox" alt="Portfolio Badge"/> </a> </p>
 <!-- Footer waving capsule -->
 <p align="center">
   <img src="https://camo.githubusercontent.com/ff1d4eb768b74fa335491dd8a7e87d95017665c1570e5a8828fddfdb728da450/68747470733a2f2f63617073756c652d72656e6465722e76657263656c2e6170702f6170693f747970653d776176696e6726636f6c6f723d6772616469656e74266865696768743d3130302673656374696f6e3d666f6f746572" alt="Waving Footer Capsule"/>
