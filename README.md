@@ -7,7 +7,7 @@
 </div>
 
 <p align="center">
-  <img src="https://www.jayanth.xyz/assets/img/j2.jpg" height="200" />
+  <img src="https://www.jayanth.site/assets/img/j2.jpg" height="200" />
 </p>
 
 <div style="background-color: #e0e5ec; min-height: 100vh; padding: 20px; font-family: Arial, sans-serif; color: #333;">
