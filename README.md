@@ -63,7 +63,7 @@
 ##
 [![Jayanth's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Jayanth0124&theme=github-compact&radius=16&bg_color=151515&custom_title=My%20Activity%20Graph%20^_^&title_color=26a641)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=jayanth0124&theme=matrix&margin-w=50&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=Jayanth0124&theme=matrix&margin-w=50&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 ## 🐍 Contribution Graph
 
