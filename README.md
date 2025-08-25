@@ -43,9 +43,37 @@
 
   <br/>
 <table>
+  <tr>
+    <td>
+      <a href="https://github.com/Jayanth0124/mental-wellness-chatbot">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayanth0124&repo=mental-wellness-chatbot&theme=dracula" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/Jayanth0124/mental-wellness-chatbot">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayanth0124&repo=3D-gesture-control&theme=dracula" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/Jayanth0124/image-generator">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayanth0124&repo=image-generator&theme=dracula" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/Jayanth0124/image-generator">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayanth0124&repo=whatsapp-chat-parser&theme=dracula" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+
+<table>
 <thead>
 <tr>
 <th>
+  
   <div align="center">
     <img src="https://github-readme-stats.vercel.app/api?username=Jayanth0124&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph" style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
     <img src="https://streak-stats.demolab.com?user=Jayanth0124&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=20" height="150" alt="streak graph" style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
@@ -121,5 +149,11 @@
 
   <img src="https://camo.githubusercontent.com/ff1d4eb768b74fa335491dd8a7e87d95017665c1570e5a8828fddfdb728da450/68747470733a2f2f63617073756c652d72656e6465722e76657263656c2e6170702f6170693f747970653d776176696e6726636f6c6f723d6772616469656e74266865696768743d3130302673656374696f6e3d666f6f746572" alt="Waving Footer Capsule"/>
 </p>
+
+
+
+
+
+
 
 
