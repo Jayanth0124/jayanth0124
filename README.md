@@ -56,8 +56,17 @@
 </table>
 
 ##
+<div align="center">
+
+[![wakatime](https://wakatime.com/badge/user/c1f85662-37d8-4d79-b727-e72a62cbf7d0.svg)](https://wakatime.com/@c1f85662-37d8-4d79-b727-e72a62cbf7d0)
+
+</div>
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Jayanth0124&layout=compact" alt="WakaTime Stats" />
+<img 
+    src="https://github-readme-stats.vercel.app/api/wakatime?username=Jayanth0124&layout=compact&theme=transparent" 
+    alt="WakaTime Stats" 
+  />
 </p>
 
 ##
