@@ -86,24 +86,11 @@
 
 ## My Tech Stack
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/javascript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E" />
-  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/css3-%231572B6.svg?logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/python-%233776AB.svg?logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/android%20studio-3DDC84.svg?logo=android-studio&logoColor=white" />
-  <img src="https://img.shields.io/badge/arduino-%2300979D.svg?logo=arduino&logoColor=white" />
-  <img src="https://img.shields.io/badge/bootstrap-%237952B3.svg?logo=bootstrap&logoColor=white" />
-  <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?logo=figma&logoColor=white" />
-  <img src="https://img.shields.io/badge/git-%23F05032.svg?logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/opencv-%23white.svg?logo=opencv&logoColor=black" />
-  <img src="https://img.shields.io/badge/photoshop-31A8FF.svg?logo=adobe-photoshop&logoColor=white" />
-  <img src="https://img.shields.io/badge/VSCode-%23007ACC.svg?logo=visual-studio-code&logoColor=white" />
-  <img src="https://img.shields.io/badge/node.js-339933?logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/API-0052CC?logo=datadog&logoColor=white" />
-  <img src="https://img.shields.io/badge/AJAX-1D3557.svg?logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white" />
+  <img src="https://skillicons.dev/icons?i=python,javascript,typescript,html,css,androidstudio,arduino,bootstrap,figma,git,opencv" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ps,vscode,nodejs,fastapi,netlify,vercel,firebase" />
 </p>
 
 
