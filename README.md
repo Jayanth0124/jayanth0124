@@ -68,20 +68,25 @@
 
 ##
 
-<table>
-<thead>
-<tr>
-<th>
-  
-  <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=Jayanth0124&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph" style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
-    <img src="https://streak-stats.demolab.com?user=Jayanth0124&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=20" height="150" alt="streak graph" style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Jayanth0124&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph" style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
-  </div>
-  </th>
-</tr>
-</thead>
+<table style="margin: 0 auto; text-align: center;">
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=Jayanth0124&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" 
+           height="150" 
+           alt="stats graph" 
+           style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
+      <img src="https://streak-stats.demolab.com?user=Jayanth0124&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=20" 
+           height="150" 
+           alt="streak graph" 
+           style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Jayanth0124&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" 
+           height="150" 
+           alt="languages graph" 
+           style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
+    </td>
+  </tr>
 </table>
+
 
 ##
 <div align="center">
