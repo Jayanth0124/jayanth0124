@@ -37,10 +37,6 @@
 - 🧠 Exploring the intersection of Front-End Development and AI, blending creativity with cutting-edge tech
 - ⚙️ Developing responsive, user-centric interfaces using HTML, CSS, JavaScript, and frameworks like React and Vue
 - 🌐 Integrating APIs, building real-world projects, and deploying them with tools like Firebase
-- 🎨 Enhancing UI/UX with attention to accessibility, scalability, and modern design principles
-- 📚 Pursuing certifications and staying updated with the latest in web tech & AI innovation
-- 💡 Experimenting with Python-based automation and creating unique digital experiences
-
   <br/>
 <table>
   <tr>
