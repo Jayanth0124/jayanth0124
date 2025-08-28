@@ -1,6 +1,5 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Jayanth%&fontSize=70&fontAlignY=35&animation=fadeIn" />
-  
 </div>
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Jayanth0124&label=Profile%20Views&color=ff69b4&style=flat-square" alt="Profile Views">
@@ -27,8 +26,6 @@
     </div>
   </div>
 </div>
-
-
 
 ## What I'm up to
 
@@ -85,7 +82,6 @@
     </td>
   </tr>
 </table>
-
 
 ##
 <div align="center">
