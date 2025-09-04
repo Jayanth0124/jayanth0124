@@ -28,7 +28,6 @@
 </div>
 
 ## What I'm up to
-
 - 🌱 Constantly learning and expanding my tech horizons
 - 🧠 Exploring the intersection of Front-End Development and AI, blending creativity with cutting-edge tech
 - ⚙️ Developing responsive, user-centric interfaces using HTML, CSS, JavaScript, and frameworks like React and Vue
