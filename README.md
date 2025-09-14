@@ -21,7 +21,7 @@
        </p>
       </h2>
       <p style="margin-top: 20px; font-size: 16px; line-height: 1.6;">
-        As a passionate Front-End Developer, I specialize in building responsive, user-centric web interfaces using HTML, CSS, and JavaScript. I have hands-on experience developing interactive web applications—ranging from API-powered tools to AI-integrated platforms—while using frameworks like React and Vue to deliver dynamic, high-performance solutions. My skill set includes UI/UX design, Python, Firebase, and working with RESTful APIs. I’m committed to continuous learning, earning certifications, and building real-world projects to stay up to date with evolving technologies. I thrive in collaborative, agile environments and focus on writing clean, scalable, and accessible front-end code that enhances user experience.
+        As a passionate Front-End Developer, I specialize in building responsive, user-centric web interfaces using HTML, CSS, and JavaScript. I have hands-on experience developing interactive web applications—ranging from API-powered tools to AI-integrated platforms—while using frameworks like React and Vue to deliver dynamic, high-performance solutions. My skill set includes UI/UX design, Python, Firebase, and working with RESTful APIs.
       </p>
     </div>
   </div>
