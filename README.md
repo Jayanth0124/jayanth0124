@@ -107,8 +107,6 @@
 </p>
 
 ---
-
-
 ## My Tech Stack
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,javascript,typescript,html,css,androidstudio,arduino,bootstrap,figma,git,opencv" />
