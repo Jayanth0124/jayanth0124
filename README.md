@@ -115,7 +115,6 @@
   <img src="https://skillicons.dev/icons?i=ps,vscode,nodejs,fastapi,netlify,vercel,firebase" />
 </p>
 
-
 ## Let's Connect
 
  <div align="center" style="margin-top: 20px;">
