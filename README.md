@@ -4,7 +4,6 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Jayanth0124&label=Profile%20Views&color=ff69b4&style=flat-square" alt="Profile Views">
 </div>
-
 <p align="center">
   <img src="https://www.jayanth.site/assets/img/j2.jpg" height="200" />
 </p>
