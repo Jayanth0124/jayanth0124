@@ -1,0 +1,42 @@
+name: Generate Contribution Graphs
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # runs every day at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate snake.svg
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+
+      - name: Move snake output
+        run: mv dist dist_snake # Rename the first output directory
+
+      - name: Generate pacman-contribution-graph.svg
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # This creates a new 'dist' directory for the pacman graphs
+
+      - name: Combine outputs
+        run: cp dist_snake/snake.svg dist/ # Copy the snake svg into the final dist directory
+
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
