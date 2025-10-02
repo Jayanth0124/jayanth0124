@@ -8,9 +8,8 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
-
     permissions:
-      contents: write
+      contents: write  # This is crucial: grants write permissions to the token
 
     steps:
       - name: Generate snake.svg
@@ -23,6 +22,7 @@ jobs:
       - name: Push snake.svg to output branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Explicitly use the token
           branch: output
           folder: dist
           clean: false
