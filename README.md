@@ -111,13 +111,12 @@
 </picture>
 
 ---
-## My Tech Stack
+## My Tech Stack 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,javascript,typescript,html,css,androidstudio,arduino,bootstrap,figma,git,opencv" />
+  <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,vue,nextjs,nodejs,express,python,php,firebase,tensorflow" />
 </p>
-
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ps,vscode,nodejs,fastapi,netlify,vercel,firebase" />
+  <img src="https://skillicons.dev/icons?i=mysql,git,github,postman,arduino,figma" />
 </p>
 
 ## Let's Connect
