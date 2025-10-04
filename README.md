@@ -20,18 +20,18 @@
        </p>
       </h2>
       <p style="margin-top: 20px; font-size: 16px; line-height: 1.6;">
-        As a passionate Front-End Developer, I specialize in building responsive, user-centric web interfaces using HTML, CSS, and JavaScript. I have hands-on experience developing interactive web applications—ranging from API-powered tools to AI-integrated platforms—while using frameworks like React and Vue to deliver dynamic, high-performance solutions. My skill set includes UI/UX design, Python, Firebase, and working with RESTful APIs.
+        A results-driven Full-Stack Developer specializing in JavaScript, TypeScript, React.js, Node.js, and Python
+            to build high-performance, responsive web applications. Proven ability to develop end-to-end solutions, from
+            creating RESTful APIs with Node.js to building interactive user interfaces with React. Experienced in API
+            integration, including the OpenAI and Pexels APIs , and developing AI-powered applications with
+            TensorFlow.js and Python. Proficient in database management with Firebase Realtime Database and Firestore. A
+            collaborative team player with hands-on experience in Agile development environments and version control
+            with Git and GitHub.
       </p>
     </div>
   </div>
 </div>
 
-## What I'm up to
-- 🌱 Constantly learning and expanding my tech horizons
-- 🧠 Exploring the intersection of Front-End Development and AI, blending creativity with cutting-edge tech
-- ⚙️ Developing responsive, user-centric interfaces using HTML, CSS, JavaScript, and frameworks like React and Vue
-- 🌐 Integrating APIs, building real-world projects, and deploying them with tools like Firebase
-  <br/>
 <table style="margin: 0 auto; text-align: center;">
   <tr>
     <td>
