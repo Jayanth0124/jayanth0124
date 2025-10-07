@@ -101,7 +101,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/snake.svg" alt="Snake Game" />
 </p>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph.svg">
