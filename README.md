@@ -128,7 +128,6 @@
   <a href="https://www.linkedin.com/in/jayanth-donavalli/" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" width="50" height="50" style="margin: 10px;" alt="LinkedIn"/>
   </a>
-
   <a href="mailto:jayanthdonavalli0124@gmail.com" target="_blank">
     <img src="https://skillicons.dev/icons?i=gmail" width="50" height="50" style="margin: 10px;" alt="Gmail"/>
   </a>
