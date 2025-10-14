@@ -107,7 +107,6 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph.svg">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph.svg">
 </picture>
-
 ---
 ## My Tech Stack 
 <p align="center">
