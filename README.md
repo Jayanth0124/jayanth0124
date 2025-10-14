@@ -8,7 +8,7 @@
   <img src="https://www.jayanth.site/assets/img/j2.jpg" height="200" />
 </p>
 <p align="center"> <a href="https://www.jayanth.site" target="_blank"> <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Click%20Here-blueviolet?style=for-the-badge&logo=Firefox" alt="Portfolio Badge"/> </a> </p>
-<!-- Footer waving capsule -->
+<!-- Footer waving capsule -->  
 <p align="center">
 <div style="background-color: #e0e5ec; min-height: 100vh; padding: 20px; font-family: Arial, sans-serif; color: #333;">
   <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
