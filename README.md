@@ -43,7 +43,7 @@
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayanth0124&repo=3D-gesture-control&theme=dracula" />
       </a>
     </td>
-  </tr>
+  </tr> 
   <tr>
     <td>
       <a href="https://github.com/Jayanth0124/image-generator">
