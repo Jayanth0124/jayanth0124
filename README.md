@@ -17,7 +17,7 @@
       <h2 style="color: #333; background-color: #f0f0f0; padding: 20px; border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);">
        <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=500&color=8AF7FF&center=true&vCenter=true&width=435&lines=Hello%2C+I'm+Jayanth;Nice+to+meet+you!" alt="Hello, I'm Jayanth" />
-       </p>
+       </p> 
       </h2>
       <p style="margin-top: 20px; font-size: 16px; line-height: 1.6;">
         A results-driven Full-Stack Developer specializing in JavaScript, TypeScript, React.js, Node.js, and Python
