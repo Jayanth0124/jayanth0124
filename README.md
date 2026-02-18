@@ -31,7 +31,7 @@
     </div>
   </div>
 </div>
-<table style="margin: 0 auto; text-align: center;">
+<!-- <table style="margin: 0 auto; text-align: center;">
   <tr>
     <td>
       <a href="https://github.com/Jayanth0124/mental-wellness-chatbot">
@@ -56,27 +56,30 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 
-##
-<table style="margin: 0 auto; text-align: center;">
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=Jayanth0124&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" 
-           height="150" 
-           alt="stats graph" 
-           style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
-      <img src="https://streak-stats.demolab.com?user=Jayanth0124&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=20" 
-           height="150" 
-           alt="streak graph" 
-           style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
-      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Jayanth0124&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" 
-           height="150" 
-           alt="languages graph" 
-           style="border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);" />
-    </td>
-  </tr>
-</table>
+## My Tech Stack 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,vue,nextjs,nodejs,express,python,php,firebase,tensorflow" />
+</p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mysql,git,github,postman,arduino,figma" />
+</p>
+
+## My Stats
+<div align="center">
+
+<img height="165" src="https://streak-stats.demolab.com?user=Jayanth0124&theme=dracula&border_radius=15" />
+
+<img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jayanth0124&theme=dracula&border=true" />
+
+<img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Jayanth0124&theme=dracula" />
+
+</div>
+
+<div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jayanth0124&theme=dracula" />
+</div>
 
 ##
 <div align="center">
@@ -85,10 +88,7 @@
 
 </div>
 <p align="center">
-<img 
-    src="https://github-readme-stats.vercel.app/api/wakatime?username=Jayanth0124&layout=compact&theme=transparent" 
-    alt="WakaTime Stats" 
-  />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Jayanth0124&theme=dracula&utcOffset=5.5" />
 </p>
 
 
@@ -107,14 +107,8 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph.svg">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph.svg">
 </picture>
----
-## My Tech Stack 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,vue,nextjs,nodejs,express,python,php,firebase,tensorflow" />
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=mysql,git,github,postman,arduino,figma" />
-</p>
+
+
 
 ## Let's Connect
 
