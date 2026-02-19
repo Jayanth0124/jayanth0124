@@ -65,7 +65,7 @@
 ## My Tech Stack 
 
 <div align="center">
-  <img src="https://stylish-tech-icons.vercel.app/api?skills=html5,css3,javascript,typescript,react,vuedotjs,nextdotjs,nodedotjs,express,python,php,firebase,tensorflow,mysql,git,github,postman,arduino,figma" alt="The Arsenal - Tech Stack" />
+  <img src="https://stylish-tech-icons.vercel.app/api?skills=html5,css3,javascript,typescript,react,vuedotjs,nextdotjs,nodedotjs,express,python,php,firebase,tensorflow,mysql,git,github,postman,arduino,figma&v=1" alt="The Arsenal - Tech Stack" />
 </div>
 
 ## Developer Stats
