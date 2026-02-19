@@ -58,6 +58,10 @@
   </tr>
 </table> -->
 
+<div align="center">
+
+[![wakatime](https://wakatime.com/badge/user/c1f85662-37d8-4d79-b727-e72a62cbf7d0.svg)](https://wakatime.com/@c1f85662-37d8-4d79-b727-e72a62cbf7d0)
+
 ## My Tech Stack 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,vue,nextjs,nodejs,express,python,php,firebase,tensorflow" />
@@ -69,7 +73,7 @@
 ## Developer Stats
 <div align="center">
   <a href="https://github.com/Jayanth0124/github-futuristic-stats">
-    <img src="https://futuristic-stats.vercel.app/api?username=Jayanth0124&theme=platinum" alt="Jayanth's Developer Stats" />
+    <img src="https://futuristic-stats.vercel.app/api?username=Jayanth0124&theme=platinum&text=JAYANTH" alt="Developer Stats" />
   </a>
 </div>
 
@@ -84,25 +88,14 @@
 
 </div>
 
-<div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jayanth0124&theme=dracula" />
-</div>
 
-##
-<div align="center">
 
-[![wakatime](https://wakatime.com/badge/user/c1f85662-37d8-4d79-b727-e72a62cbf7d0.svg)](https://wakatime.com/@c1f85662-37d8-4d79-b727-e72a62cbf7d0)
 
-</div>
-<p align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Jayanth0124&theme=dracula&utcOffset=5.5" />
-</p>
 
 
 ##
 [![Jayanth's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Jayanth0124&theme=github-compact&radius=16&bg_color=151515&custom_title=My%20Activity%20Graph%20^_^&title_color=26a641)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=Jayanth0124&theme=matrix&margin-w=50&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 ## 🐍 Contribution Graph
 
