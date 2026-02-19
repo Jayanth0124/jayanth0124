@@ -80,11 +80,7 @@
 ## My Stats
 <div align="center">
 
-<img height="165" src="https://streak-stats.demolab.com?user=Jayanth0124&theme=dracula&border_radius=15" />
-
-<img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jayanth0124&theme=dracula&border=true" />
-
-<img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Jayanth0124&theme=dracula" />
+<img src="https://royal-github-stats.vercel.app/api?username=Jayanth0124&theme=royal" alt="Jayanth's Cinematic GitHub Stats" />
 
 </div>
 
