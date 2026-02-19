@@ -63,12 +63,10 @@
 [![wakatime](https://wakatime.com/badge/user/c1f85662-37d8-4d79-b727-e72a62cbf7d0.svg)](https://wakatime.com/@c1f85662-37d8-4d79-b727-e72a62cbf7d0)
 
 ## My Tech Stack 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,vue,nextjs,nodejs,express,python,php,firebase,tensorflow" />
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=mysql,git,github,postman,arduino,figma" />
-</p>
+
+<div align="center">
+  <img src="https://stylish-tech-icons.vercel.app/api?skills=html5,css3,javascript,typescript,react,vuedotjs,nextdotjs,nodedotjs,express,python,php,firebase,tensorflow,mysql,git,github,postman,arduino,figma" alt="The Arsenal - Tech Stack" />
+</div>
 
 ## Developer Stats
 <div align="center">
