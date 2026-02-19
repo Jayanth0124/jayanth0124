@@ -66,6 +66,13 @@
   <img src="https://skillicons.dev/icons?i=mysql,git,github,postman,arduino,figma" />
 </p>
 
+## Developer Stats
+<div align="center">
+  <a href="https://github.com/Jayanth0124/github-futuristic-stats">
+    <img src="https://futuristic-stats.vercel.app/api?username=Jayanth0124&theme=platinum" alt="Jayanth's Developer Stats" />
+  </a>
+</div>
+
 ## My Stats
 <div align="center">
 
