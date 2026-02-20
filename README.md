@@ -2,8 +2,11 @@
   <img src="https://banners-opal.vercel.app/api/banner?type=header&text=JAYANTH&theme=royal" alt="Header Wave" />
 </div> 
 
-<p align="center"> <a href="https://www.jayanth.site" target="_blank"> <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Click%20Here-blueviolet?style=for-the-badge&logo=Firefox" alt="Portfolio Badge"/> </a> </p>
-<!-- Footer waving capule -->  
+<p align="center"> 
+  <a href="https://www.jayanth.site" target="_blank"> 
+    <img src="https://readme-social-icons.vercel.app/api/button?theme=royal" alt="Access Portfolio"/> 
+  </a> 
+</p> 
 
 
 <div align="center">
