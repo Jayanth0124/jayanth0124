@@ -35,20 +35,31 @@
   </tr>
 </table> -->
 
-## My Tech Stack 
+<br>
+<h2 align="center"> 
+  𝐌 𝐘 &nbsp;&nbsp; 𝐓 𝐄 𝐂 𝐇 &nbsp;&nbsp; 𝐒 𝐓 𝐀 𝐂 𝐊 
+</h2>
+<br>
 
 <div align="center">
   <img src="https://stylish-tech-icons.vercel.app/api?skills=html5,css3,javascript,typescript,react,vuedotjs,nextdotjs,nodedotjs,express,python,php,firebase,tensorflow,mysql,git,github,postman,arduino,figma&v=1" alt="The Arsenal - Tech Stack" />
 </div>
 
-## Developer Stats
+<br>
+<h2 align="center"> 
+  𝐃 𝐄 𝐕 𝐄 𝐋 𝐎 𝐏 𝐄 𝐑 &nbsp;&nbsp; 𝐒 𝐓 𝐀 𝐓 𝐒 
+</h2>
+<br>
 <div align="center">
   <a href="https://github.com/Jayanth0124/github-futuristic-stats">
     <img src="https://futuristic-stats.vercel.app/api?username=Jayanth0124&theme=platinum&text=JAYANTH" alt="Developer Stats" />
   </a>
 </div>
 
-## My Stats
+<h2 align="center"> 
+  𝐌 𝐘 &nbsp;&nbsp; 𝐒 𝐓 𝐀 𝐓 𝐒 
+</h2>
+<br>
 <div align="center">
 
 <img src="https://royal-github-stats.vercel.app/api?username=Jayanth0124&theme=royal" alt="Jayanth's Cinematic GitHub Stats" />
@@ -56,27 +67,30 @@
 </div>
 
 
-
-
-
-
-### 📊 Contribution Graph
+<h3 align="center"> 
+  📊 &nbsp; 𝐂 𝐎 𝐍 𝐓 𝐑 𝐈 𝐁 𝐔 𝐓 𝐈 𝐎 𝐍 &nbsp; 𝐆 𝐑 𝐀 𝐏 𝐇 
+</h3>
+<br>
 
 <div align="center">
   <img src="https://commit-matrix.vercel.app/api?username=Jayanth0124" alt="Jayanth's Contribution Matrix" />
 </div>
 
 
-## 🐍 Contribution Metrics
+<h2 align="center"> 
+  🐍 &nbsp;&nbsp; 𝐂 𝐎 𝐍 𝐓 𝐑 𝐈 𝐁 𝐔 𝐓 𝐈 𝐎 𝐍 &nbsp; 𝐌 𝐄 𝐓 𝐑 𝐈 𝐂 𝐒 
+</h2>
+<br>
 
 <div align="center" style="margin-top: 40px; margin-bottom: 40px;">
   <img src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/royal-snake.svg" alt="Royal Contribution Snake" />
 </div>
 
 
-
-
-## Let's Connect
+<h2 align="center"> 
+  𝐋 𝐄 𝐓 ' 𝐒 &nbsp;&nbsp; 𝐂 𝐎 𝐍 𝐍 𝐄 𝐂 𝐓 
+</h2>
+<br>
 
 <div align="center">
 
