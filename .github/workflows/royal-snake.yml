@@ -2,12 +2,15 @@ name: Generate Royal Snake
 
 on:
   schedule:
-    # Runs automatically every 24 hours to update your commits
     - cron: "0 0 * * *" 
-  workflow_dispatch: # Allows you to run it manually from the Actions tab
+  workflow_dispatch: 
   push:
     branches:
     - main
+
+# 🔓 THE FIX: explicitly tell GitHub this script is allowed to push code
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -19,7 +22,6 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # This is the God Mode math: Customizing the snake and dot colors
           outputs: |
             dist/royal-snake.svg?color_snake=#d4af37&color_dots=#1a1c23,#3d3310,#7a6620,#b89930,#d4af37
         env:
