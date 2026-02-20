@@ -1,35 +1,13 @@
 <div align="center"> 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Jayanth%&fontSize=70&fontAlignY=35&animation=fadeIn" />
 </div>  
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Jayanth0124&label=Profile%20Views&color=ff69b4&style=flat-square" alt="Profile Views">
-</div>
-<p align="center">
-  <img src="https://www.jayanth.site/assets/img/j2.jpg" height="200" />
-</p>
+
 <p align="center"> <a href="https://www.jayanth.site" target="_blank"> <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Click%20Here-blueviolet?style=for-the-badge&logo=Firefox" alt="Portfolio Badge"/> </a> </p>
 <!-- Footer waving capule -->  
-<p align="center">
-<div style="background-color: #e0e5ec; min-height: 100vh; padding: 20px; font-family: Arial, sans-serif; color: #333;">
-  <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
-    <!-- TEXT SECTION -->
-    <div style="flex: 1; min-width: 300px;">
-      <h2 style="color: #333; background-color: #f0f0f0; padding: 20px; border-radius: 20px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);">
-       <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=500&color=8AF7FF&center=true&vCenter=true&width=435&lines=Hello%2C+I'm+Jayanth;Nice+to+meet+you!" alt="Hello, I'm Jayanth" />
-       </p> 
-      </h2>
-      <p style="margin-top: 20px; font-size: 16px; line-height: 1.6;">
-        A results-driven Full-Stack Developer specializing in JavaScript, TypeScript, React.js, Node.js, and Python
-            to build high-performance, responsive web applications. Proven ability to develop end-to-end solutions, from
-            creating RESTful APIs with Node.js to building interactive user interfaces with React. Experienced in API
-            integration, including the OpenAI and Pexels APIs , and developing AI-powered applications with
-            TensorFlow.js and Python. Proficient in database management with Firebase Realtime Database and Firestore. A
-            collaborative team player with hands-on experience in Agile development environments and version control
-            with Git and GitHub.
-      </p>
-    </div>
-  </div>
+
+
+<div align="center">
+  <img src="https://hero-section-gules.vercel.app/api/hero?v=1" alt="Jayanth Profile Hero" />
 </div>
 <!-- <table style="margin: 0 auto; text-align: center;">
   <tr>
