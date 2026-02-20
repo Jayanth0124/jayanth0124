@@ -61,18 +61,18 @@
 
 
 
-### 📊 Contribution Matrix
+### 📊 Contribution Graph
 
 <div align="center">
   <img src="https://commit-matrix.vercel.app/api?username=Jayanth0124" alt="Jayanth's Contribution Matrix" />
 </div>
 
 
-## 🐍 Contribution Graph
+## 🐍 Contribution Metrics
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/snake.svg" alt="Snake Game" />
-</p>
+<div align="center" style="margin-top: 40px; margin-bottom: 40px;">
+  <img src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/royal-snake.svg" alt="Royal Contribution Snake" />
+</div>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph.svg">
