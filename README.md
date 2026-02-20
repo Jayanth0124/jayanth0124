@@ -83,21 +83,25 @@
 
 ## Let's Connect
 
- <div align="center" style="margin-top: 20px;">
+<div align="center">
 
   <a href="https://www.instagram.com/jayanth.chowdary__/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=instagram" width="50" height="50" style="margin: 10px;" alt="Instagram"/>
+    <img src="https://readme-social-icons.vercel.app/api/socials?icon=instagram&theme=royal" alt="Instagram"/>
   </a>
+  &nbsp;&nbsp;&nbsp;
 
   <a href="https://www.linkedin.com/in/jayanth-donavalli/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" width="50" height="50" style="margin: 10px;" alt="LinkedIn"/>
+    <img src="https://readme-social-icons.vercel.app/api/socials?icon=linkedin&theme=royal" alt="LinkedIn"/>
   </a>
+  &nbsp;&nbsp;&nbsp;
+
   <a href="mailto:jayanthdonavalli0124@gmail.com" target="_blank">
-    <img src="https://skillicons.dev/icons?i=gmail" width="50" height="50" style="margin: 10px;" alt="Gmail"/>
+    <img src="https://readme-social-icons.vercel.app/api/socials?icon=gmail&theme=royal" alt="Gmail"/>
   </a>
+  &nbsp;&nbsp;&nbsp;
 
   <a href="https://api.whatsapp.com/send/?phone=%2B917207288496&text&type=phone_number&app_absent=0" target="_blank">
-    <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=25D366" width="50" height="50" style="margin: 10px;" alt="WhatsApp"/>
+    <img src="https://readme-social-icons.vercel.app/api/socials?icon=whatsapp&theme=royal" alt="WhatsApp"/>
   </a>
 
 </div>
