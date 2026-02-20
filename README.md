@@ -73,11 +73,7 @@
 <div align="center" style="margin-top: 40px; margin-bottom: 40px;">
   <img src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/royal-snake.svg" alt="Royal Contribution Snake" />
 </div>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/pacman-contribution-graph.svg">
-</picture>
+
 
 
 
