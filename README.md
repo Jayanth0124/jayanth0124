@@ -36,10 +36,6 @@
   </tr>
 </table> -->
 
-<div align="center">
-
-[![wakatime](https://wakatime.com/badge/user/c1f85662-37d8-4d79-b727-e72a62cbf7d0.svg)](https://wakatime.com/@c1f85662-37d8-4d79-b727-e72a62cbf7d0)
-
 ## My Tech Stack 
 
 <div align="center">
