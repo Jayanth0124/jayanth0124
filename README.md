@@ -4,7 +4,6 @@
 <img src="https://komarev.com/ghpvc/?username=Jayanth0124&color=00000000" alt="hidden-counter" width="0" height="0" style="display:none !important;" />
 
 
-
 <div align="center">
   <img src="https://hero-section-gules.vercel.app/api/hero?v=1" alt="Jayanth Profile Hero" />
 </div>
