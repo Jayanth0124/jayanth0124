@@ -1,4 +1,4 @@
-name: Generate Royal Engine (Physics V3)
+name: Generate Royal Cyber-Worm
 
 on:
   schedule:
@@ -23,21 +23,14 @@ jobs:
         with:
           node-version: '20'
 
-      # Install OS-level graphics dependencies required for Node Canvas
-      - name: Install OS Graphics Libraries
-        run: sudo apt-get update && sudo apt-get install -y build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
-
       - name: Create Dist Folder
         run: mkdir -p dist
 
-      # 🚀 THE FIX: Bulletproof NPM Install (No package.json required)
-      - name: Install Node Dependencies
-        run: npm install canvas gifencoder
-
-      - name: Run True Physics Engine
+      - name: Run Royal Snake Engine
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node .github/scripts/royal-shooter.js
+        # Runs our custom, dependency-free script!
+        run: node .github/scripts/royal-snake.js
 
       - name: Push to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
