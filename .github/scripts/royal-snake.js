@@ -11,7 +11,6 @@ const theme = {
   snake: '#00e5ff',       // Cyan neon cyber-worm
   glow: '#d4af37'         // Gold aura
 };
-
 async function fetchContributions(token, username) {
   const query = `
     query { user(login: "${username}") { contributionsCollection {
