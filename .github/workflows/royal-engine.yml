@@ -1,9 +1,9 @@
-name: Generate Royal Engine Game
+name: Generate Royal Graphs
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight
-  workflow_dispatch: # Allows manual click
+    - cron: "0 0 * * *" 
+  workflow_dispatch: 
   push:
     branches:
     - main
@@ -23,12 +23,26 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Create Dist Folder
+        run: mkdir -p dist
+
+      # 1. Generate the Royal Snake
+      - name: Generate Royal Gold Snake Animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/royal-snake.svg?color_snake=#d4af37&color_dots=#1a1c23,#3d3310,#7a6620,#b89930,#d4af37
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Generate the Custom Space Shooter
       - name: Run Royal Shooter Engine
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # This runs our custom script!
         run: node .github/scripts/royal-shooter.js
 
+      # 3. Push BOTH to the output branch at once
       - name: Push to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
