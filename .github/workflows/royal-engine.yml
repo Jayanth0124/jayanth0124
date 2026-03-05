@@ -26,12 +26,21 @@ jobs:
       - name: Create Dist Folder
         run: mkdir -p dist
 
-      - name: Run Royal Snake Engine
+      # 1. RUN THE REAL GAME ENGINE (Saves as base-snake.svg)
+      - name: Generate Base Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/base-snake.svg?color_bg=#0d0e15&color_snake=#00e5ff&color_dots=#1a1c23,#5a4b16,#8a7322,#b89930,#d4af37
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # Runs our custom, dependency-free script!
-        run: node .github/scripts/royal-snake.js
 
+      # 2. RUN OUR INTERCEPTOR (Wraps it in HUD and adds Glow)
+      - name: Inject Royal Arsenal Theme
+        run: node .github/scripts/royal-enhancer.js
+
+      # 3. PUSH THE MASTERPIECE
       - name: Push to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
