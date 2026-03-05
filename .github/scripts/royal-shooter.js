@@ -1,15 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-// The Royal Theme Palette
+// 👑 God Mode Palette
 const theme = {
   bg: "#0d0e15",
-  glass: "#1a1c23",
-  ship: "#ffffff",
-  laser: "#00e5ff", // Cyan laser for contrast against gold
-  goldLight: "#d4af37",
-  goldDark: "#7a6620",
-  empty: "#2a2d39"
+  shipBody: "#ffffff",
+  shipWing: "#d4af37", // Royal Gold wings
+  laser: "#00e5ff",    // Cyan lasers
+  goldLight: "#d4af37", // High Commits
+  goldDark: "#8a7322",  // Low Commits
 };
 
 async function buildEngine() {
@@ -21,7 +20,7 @@ async function buildEngine() {
     process.exit(1);
   }
 
-  console.log(`> UPLINK ESTABLISHED. Fetching data for ${username}...`);
+  console.log(`> INITIATING ROYAL SHOOTER V2 FOR ${username}...`);
 
   // 1. Fetch live GitHub Contributions
   const query = `
@@ -49,77 +48,117 @@ async function buildEngine() {
   const data = await res.json();
   const weeks = data.data.user.contributionsCollection.contributionCalendar.weeks;
   
-  // Grab the last 15 weeks to act as the "Space Invaders" enemy armada
-  const recentWeeks = weeks.slice(-15);
+  // Grab the last 16 weeks to act as the enemy armada
+  const recentWeeks = weeks.slice(-16);
 
-  // 2. Build the SVG Game Board
   const width = 800;
-  const height = 350;
+  const height = 400;
+  
+  // 2. Generate the Starfield Background
+  let starsSvg = '';
+  for(let i = 0; i < 50; i++) {
+    const sx = Math.random() * width;
+    const sy = Math.random() * height;
+    const sr = Math.random() * 1.5;
+    const delay = Math.random() * 3;
+    starsSvg += `<circle cx="${sx}" cy="${sy}" r="${sr}" fill="#ffffff" opacity="0.3" style="animation: twinkle 3s infinite ${delay}s alternate;" />\n`;
+  }
+
+  // 3. Generate the Exploding Alien Grid (Your Commits)
   let blocksSvg = '';
+  // Center the grid dynamically
+  const gridStartX = (width - (16 * 25)) / 2; 
 
   recentWeeks.forEach((week, wIndex) => {
     week.contributionDays.forEach((day, dIndex) => {
-      const x = 50 + (wIndex * 45);
-      const y = 30 + (dIndex * 25);
+      // 🚫 CRITICAL FIX: If no commits, DO NOT DRAW THE BOX. 
+      if (day.contributionCount === 0) return;
+
+      const x = gridStartX + (wIndex * 25);
+      const y = 40 + (dIndex * 25);
+      const blockSize = 14;
       
-      let color = theme.empty;
-      let glow = '';
-      let isTarget = false;
-
-      if (day.contributionCount > 5) { color = theme.goldLight; glow = 'filter="url(#glow)"'; isTarget = true; }
-      else if (day.contributionCount > 0) { color = theme.goldDark; isTarget = true; }
-
-      // Draw the commit block
-      blocksSvg += `<rect x="${x}" y="${y}" width="18" height="18" rx="4" fill="${color}" ${glow} class="${isTarget ? 'target' : ''}"/>\n`;
+      let color = day.contributionCount > 5 ? theme.goldLight : theme.goldDark;
+      
+      // Randomize the explosion timing so they pop continuously
+      const explodeDelay = (Math.random() * 8).toFixed(2);
+      
+      blocksSvg += `
+        <rect x="${x}" y="${y}" width="${blockSize}" height="${blockSize}" rx="3" fill="${color}" class="alien" style="transform-origin: ${x + (blockSize/2)}px ${y + (blockSize/2)}px; animation-delay: ${explodeDelay}s;" />
+      `;
     });
   });
 
-  // 3. Generate the Final Animated SVG
+  // 4. Construct the Highly Animated SVG
   const svg = `
     <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="3" result="blur" />
+          <feGaussianBlur stdDeviation="4" result="blur" />
+          <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+        <filter id="laserGlow">
+          <feGaussianBlur stdDeviation="2" result="blur" />
           <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
         </filter>
       </defs>
 
       <style>
-        .target { animation: pulse 3s infinite alternate; }
-        .laser { animation: shoot 1.5s infinite linear; stroke-dasharray: 20 100; }
-        .laser-2 { animation: shoot 1.5s infinite linear; animation-delay: 0.7s; stroke-dasharray: 20 100; }
+        /* Background Stars */
+        @keyframes twinkle { 0% { opacity: 0.1; } 100% { opacity: 0.8; } }
         
-        @keyframes pulse { 0% { opacity: 0.8; } 100% { opacity: 1; transform: scale(1.05); } }
-        @keyframes shoot { 0% { stroke-dashoffset: 200; opacity: 1; } 100% { stroke-dashoffset: -100; opacity: 0; } }
+        /* The Exploding Commits */
+        @keyframes explode {
+          0%, 75% { opacity: 1; transform: scale(1); }
+          80% { opacity: 1; fill: #ffffff; transform: scale(1.4); } /* Flashes white and puffs up */
+          85%, 100% { opacity: 0; transform: scale(0); } /* Vaporizes */
+        }
+        .alien { animation: explode 8s infinite linear; }
+
+        /* The Strafing Ship */
+        @keyframes strafe {
+          0% { transform: translateX(-180px); }
+          50% { transform: translateX(180px); }
+          100% { transform: translateX(-180px); }
+        }
+        .ship-group { animation: strafe 6s infinite ease-in-out; }
+
+        /* The Laser Blasts */
+        @keyframes fireLaser {
+          0% { transform: translateY(0); opacity: 1; }
+          100% { transform: translateY(-350px); opacity: 0; }
+        }
+        .laser-beam { animation: fireLaser 0.6s infinite linear; }
+        .laser-beam-delayed { animation: fireLaser 0.6s infinite linear; animation-delay: 0.3s; }
       </style>
 
-      <rect width="${width}" height="${height}" fill="${theme.bg}" rx="15" stroke="${theme.goldDark}" stroke-width="2"/>
-      
-      <g transform="translate(40, 0)">
+      <rect width="${width}" height="${height}" fill="${theme.bg}" rx="15" />
+      ${starsSvg}
+
+      <g id="commit-grid">
         ${blocksSvg}
       </g>
 
-      <g transform="translate(360, 270)">
-        <path d="M 40 0 L 80 60 L 40 45 L 0 60 Z" fill="${theme.ship}" filter="url(#glow)"/>
-        <path d="M 40 10 L 55 50 L 40 40 L 25 50 Z" fill="${theme.glass}"/>
-        <polygon points="35,45 45,45 40,65" fill="${theme.laser}" filter="url(#glow)">
-          <animate attributeName="opacity" values="1;0.5;1" dur="0.2s" repeatCount="indefinite"/>
+      <g transform="translate(400, 360)" class="ship-group">
+        
+        <line x1="-12" y1="-10" x2="-12" y2="-30" stroke="${theme.laser}" stroke-width="3" stroke-linecap="round" class="laser-beam" filter="url(#laserGlow)"/>
+        <line x1="12" y1="-10" x2="12" y2="-30" stroke="${theme.laser}" stroke-width="3" stroke-linecap="round" class="laser-beam-delayed" filter="url(#laserGlow)"/>
+
+        <path d="M 0 -20 L 30 20 L -30 20 Z" fill="${theme.shipWing}" filter="url(#glow)"/>
+        <path d="M 0 -25 L 15 15 L -15 15 Z" fill="${theme.shipBody}"/>
+        <polygon points="-8,15 8,15 0,30" fill="${theme.laser}">
+          <animate attributeName="opacity" values="1;0.4;1" dur="0.1s" repeatCount="indefinite"/>
         </polygon>
       </g>
-
-      <line x1="400" y1="270" x2="400" y2="50" stroke="${theme.laser}" stroke-width="4" class="laser" filter="url(#glow)"/>
-      <line x1="380" y1="280" x2="300" y2="50" stroke="${theme.laser}" stroke-width="3" class="laser-2" filter="url(#glow)"/>
-      <line x1="420" y1="280" x2="500" y2="50" stroke="${theme.laser}" stroke-width="3" class="laser-2" filter="url(#glow)"/>
-
     </svg>
   `;
 
-  // 4. Save the file
+  // 5. Save the Masterpiece
   const dir = path.join(__dirname, '../../dist');
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   
   fs.writeFileSync(path.join(dir, 'royal-shooter.svg'), svg.trim());
-  console.log("> SVG GENERATED SUCCESSFULLY.");
+  console.log("> ROYAL SHOOTER V2 GENERATED SUCCESSFULLY.");
 }
 
 buildEngine().catch(console.error);
