@@ -11,48 +11,96 @@ if (!fs.existsSync(filePath)) {
 
 let svg = fs.readFileSync(filePath, 'utf8');
 
-// Extract the original width and height of the grid
+// Extract the original width and height
 const widthMatch = svg.match(/width="(\d+)"/);
 const heightMatch = svg.match(/height="(\d+)"/);
 
 const origWidth = parseInt(widthMatch[1]);
 const origHeight = parseInt(heightMatch[1]);
 
-// Expand the canvas to make room for the HUD Border
-const padding = 30;
-const newWidth = origWidth + (padding * 2);
-const newHeight = origHeight + (padding * 2);
+// Expand the canvas massively for the Heavy HUD
+const padX = 80;
+const padY = 100;
+const newWidth = origWidth + (padX * 2);
+const newHeight = origHeight + (padY * 2);
 
-// Remove the original <svg> opening and closing tags so we can wrap it
+// Remove original SVG wrapper
 let innerSvg = svg.replace(/<svg[^>]*>/, '').replace('</svg>', '');
 
-// 👑 The Royal Arsenal HUD Additions
+// 👑 THE ROYAL HUD STYLES
 const styles = `
   <style>
-    /* Add glowing physics to the Cyan Snake */
+    /* Snake and Glow Physics */
     rect[fill="#00e5ff"], path[stroke="#00e5ff"], path[fill="#00e5ff"] {
-      filter: drop-shadow(0px 0px 5px #00e5ff);
+      filter: drop-shadow(0px 0px 4px #00e5ff);
     }
-    /* Add glowing physics to the Pure Gold Commits */
     rect[fill="#d4af37"] {
-      filter: drop-shadow(0px 0px 4px #d4af37);
+      filter: drop-shadow(0px 0px 3px #d4af37);
     }
-    /* Add subtle glow to the Mid Gold Commits */
-    rect[fill="#b89930"] {
-      filter: drop-shadow(0px 0px 2px #b89930);
+    
+    /* Futuristic Text Styles */
+    .hud-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    .hud-data {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+
+    /* Blinking recording dot */
+    .blink {
+      animation: flash 2s infinite;
+    }
+    @keyframes flash {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
     }
   </style>
 `;
 
+// 🤖 HEAVY 2D SCI-FI GEOMETRY
 const hudBorder = `
-  <rect width="${newWidth}" height="${newHeight}" fill="#0d0e15" rx="15" />
+  <rect width="${newWidth}" height="${newHeight}" fill="#0d0e15" />
+
+  <path d="
+    M 30 50 
+    L 50 30 
+    L ${newWidth - 50} 30 
+    L ${newWidth - 30} 50 
+    L ${newWidth - 30} ${newHeight - 50} 
+    L ${newWidth - 50} ${newHeight - 30} 
+    L 50 ${newHeight - 30} 
+    L 30 ${newHeight - 50} 
+    Z
+  " fill="none" stroke="#3d3310" stroke-width="2" />
+
+  <rect x="${padX - 15}" y="${padY - 15}" width="${origWidth + 30}" height="${origHeight + 30}" fill="none" stroke="#1a1c23" stroke-width="2" />
+
+  <path d="M 20 60 L 20 20 L 60 20" fill="none" stroke="#d4af37" stroke-width="4" style="filter: drop-shadow(0 0 4px #d4af37);" />
+  <path d="M ${newWidth - 60} 20 L ${newWidth - 20} 20 L ${newWidth - 20} 60" fill="none" stroke="#d4af37" stroke-width="4" style="filter: drop-shadow(0 0 4px #d4af37);" />
+  <path d="M 20 ${newHeight - 60} L 20 ${newHeight - 20} L 60 ${newHeight - 20}" fill="none" stroke="#d4af37" stroke-width="4" style="filter: drop-shadow(0 0 4px #d4af37);" />
+  <path d="M ${newWidth - 60} ${newHeight - 20} L ${newWidth - 20} ${newHeight - 20} L ${newWidth - 20} ${newHeight - 60}" fill="none" stroke="#d4af37" stroke-width="4" style="filter: drop-shadow(0 0 4px #d4af37);" />
+
+  <path d="M ${padX - 25} ${padY - 15} L ${padX - 5} ${padY - 15}" stroke="#00e5ff" stroke-width="2" />
+  <path d="M ${padX - 15} ${padY - 25} L ${padX - 15} ${padY - 5}" stroke="#00e5ff" stroke-width="2" />
   
-  <rect x="15" y="15" width="${newWidth - 30}" height="${newHeight - 30}" rx="8" fill="none" stroke="#3d3310" stroke-width="2" />
+  <path d="M ${newWidth - padX + 5} ${newHeight - padY + 15} L ${newWidth - padX + 25} ${newHeight - padY + 15}" stroke="#00e5ff" stroke-width="2" />
+  <path d="M ${newWidth - padX + 15} ${newHeight - padY + 5} L ${newWidth - padX + 15} ${newHeight - padY + 25}" stroke="#00e5ff" stroke-width="2" />
+
+  <text x="65" y="45" fill="#d4af37" class="hud-text" font-size="16">ROYAL_ARSENAL_OS // v2.0</text>
   
-  <path d="M 10 35 L 10 10 L 35 10" fill="none" stroke="#d4af37" stroke-width="3" style="filter: drop-shadow(0 0 3px #d4af37);" />
-  <path d="M ${newWidth - 35} 10 L ${newWidth - 10} 10 L ${newWidth - 10} 35" fill="none" stroke="#d4af37" stroke-width="3" style="filter: drop-shadow(0 0 3px #d4af37);" />
-  <path d="M 10 ${newHeight - 35} L 10 ${newHeight - 10} L 35 ${newHeight - 10}" fill="none" stroke="#d4af37" stroke-width="3" style="filter: drop-shadow(0 0 3px #d4af37);" />
-  <path d="M ${newWidth - 35} ${newHeight - 10} L ${newWidth - 10} ${newHeight - 10} L ${newWidth - 10} ${newHeight - 35}" fill="none" stroke="#d4af37" stroke-width="3" style="filter: drop-shadow(0 0 3px #d4af37);" />
+  <circle cx="${newWidth - 205}" cy="40" r="5" fill="#00e5ff" class="blink" style="filter: drop-shadow(0 0 4px #00e5ff);" />
+  <text x="${newWidth - 190}" y="45" fill="#00e5ff" class="hud-text" font-size="14">SYSTEM: ACTIVE</text>
+
+  <text x="40" y="${newHeight - 40}" fill="#5a4b16" class="hud-data" font-size="12">SEQ: 0x9A4F | UPLINK ESTABLISHED | PORT: 8080</text>
+
+  <text x="${newWidth - 230}" y="${newHeight - 40}" fill="#7a6620" class="hud-data" font-size="12">TARGET_LOCK: CONFIRMED</text>
+
+  <path d="M 30 ${padY} L 40 ${padY + 10} L 40 ${newHeight - padY - 10} L 30 ${newHeight - padY}" fill="none" stroke="#3d3310" stroke-width="2" />
+  <path d="M ${newWidth - 30} ${padY} L ${newWidth - 40} ${padY + 10} L ${newWidth - 40} ${newHeight - padY - 10} L ${newWidth - 30} ${newHeight - padY}" fill="none" stroke="#3d3310" stroke-width="2" />
 `;
 
 // Reconstruct the ultimate SVG
@@ -60,11 +108,12 @@ const finalSvg = `
 <svg width="${newWidth}" height="${newHeight}" viewBox="0 0 ${newWidth} ${newHeight}" xmlns="http://www.w3.org/2000/svg">
   ${styles}
   ${hudBorder}
-  <g transform="translate(${padding}, ${padding})">
+  <g transform="translate(${padX}, ${padY})">
     ${innerSvg}
   </g>
 </svg>
 `;
+
 // Save it as the final file
 fs.writeFileSync(path.join(__dirname, '../../dist/royal-snake.svg'), finalSvg.trim());
-console.log("> ROYAL HUD AND GLOW PHYSICS INJECTED SUCCESSFULLY.");
+console.log("> HEAVY 2D SCI-FI HUD INJECTED SUCCESSFULLY.");
