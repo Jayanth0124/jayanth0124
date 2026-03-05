@@ -65,7 +65,6 @@ const finalSvg = `
   </g>
 </svg>
 `;
-
 // Save it as the final file
 fs.writeFileSync(path.join(__dirname, '../../dist/royal-snake.svg'), finalSvg.trim());
 console.log("> ROYAL HUD AND GLOW PHYSICS INJECTED SUCCESSFULLY.");
