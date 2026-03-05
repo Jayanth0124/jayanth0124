@@ -6,19 +6,18 @@ const GIFEncoder = require('gifencoder');
 // 👑 God Mode Palette
 const theme = {
   bg: '#0d0e15',
-  glass: '#1a1c23',
   shipBody: '#ffffff',
   shipWing: '#d4af37',
   laser: '#00e5ff',
-  goldLight: '#d4af37',
-  goldDark: '#8a7322',
+  goldLight: '#d4af37', // High Commits
+  goldDark: '#8a7322',  // Low Commits
   particle: '#d4af37'
 };
 
 async function fetchContributions(token, username) {
   const query = `
     query { user(login: "${username}") { contributionsCollection {
-      contributionCalendar { weeks { contributionDays { contributionCount } } }
+      contributionCalendar { weeks { contributionDays { weekday, contributionCount } } }
     } } }
   `;
   const res = await fetch('https://api.github.com/graphql', {
@@ -27,7 +26,8 @@ async function fetchContributions(token, username) {
     body: JSON.stringify({ query })
   });
   const data = await res.json();
-  return data.data.user.contributionsCollection.contributionCalendar.weeks.slice(-16);
+  // 🟢 FIX 1: Fetch all 52 weeks of the year, exactly like a real GitHub graph
+  return data.data.user.contributionsCollection.contributionCalendar.weeks;
 }
 
 async function buildEngine() {
@@ -39,111 +39,110 @@ async function buildEngine() {
     process.exit(1);
   }
 
-  console.log(`> INITIATING TRUE PHYSICS ENGINE FOR ${username}...`);
+  console.log(`> INITIATING TRUE 52-WEEK PHYSICS ENGINE FOR ${username}...`);
   const weeks = await fetchContributions(token, username);
 
-  // --- ENGINE SETUP ---
-  const width = 800;
-  const height = 400;
+  // 🟢 FIX 2: Widen the canvas to fit 52 weeks perfectly
+  const width = 900; 
+  const height = 280;
   const canvas = createCanvas(width, height);
   const ctx = canvas.getContext('2d');
   
   const encoder = new GIFEncoder(width, height);
   encoder.start();
-  encoder.setRepeat(0);   // Infinite loop
-  encoder.setDelay(25);   // 40 FPS (1000ms / 40)
-  encoder.setQuality(10); // High quality
+  encoder.setRepeat(0);   
+  encoder.setDelay(25);   // 40 FPS
+  encoder.setQuality(10); 
 
   // --- GAME STATE ---
   let enemies = [];
   let bullets = [];
   let particles = [];
-  const gridStartX = (width - (16 * 20)) / 2;
+  
+  // Center the 52-week grid horizontally
+  const gridStartX = 35;
+  const blockSize = 10;
+  const spacing = 15;
   
   // Load Commits into Enemy Blocks
   weeks.forEach((week, wIndex) => {
-    week.contributionDays.forEach((day, dIndex) => {
+    week.contributionDays.forEach((day) => {
       if (day.contributionCount === 0) return;
+      // 🟢 FIX 3: Map exactly to the day of the week (day.weekday) so empty days leave perfect gaps
       enemies.push({
-        x: gridStartX + (wIndex * 25),
-        y: 40 + (dIndex * 25),
-        size: 14,
-        health: day.contributionCount > 5 ? 2 : 1, // High commits take 2 hits
+        x: gridStartX + (wIndex * spacing),
+        y: 20 + (day.weekday * spacing),
+        size: blockSize,
+        health: day.contributionCount > 5 ? 2 : 1, 
         color: day.contributionCount > 5 ? theme.goldLight : theme.goldDark
       });
     });
   });
 
-  // Ship Setup
-  let ship = { x: width / 2, y: 350, speed: 6, direction: 1 };
+  // 🟢 FIX 4: Slow down the ship's movement speed to look heavier and more tactical
+  let ship = { x: width / 2, y: 230, speed: 3.5, direction: 1 };
   
-  // Stars Setup
-  let stars = Array.from({length: 60}).map(() => ({
+  let stars = Array.from({length: 80}).map(() => ({
     x: Math.random() * width, y: Math.random() * height,
-    speed: Math.random() * 2 + 0.5, size: Math.random() * 1.5
+    speed: Math.random() * 1.5 + 0.2, size: Math.random() * 1.5
   }));
 
-  // --- GAME LOOP (Simulate 150 Frames = ~4 seconds of GIF) ---
-  const totalFrames = 150;
+  // --- GAME LOOP ---
+  const totalFrames = 180; // Extended to ~4.5 seconds to watch the action
   
   for (let frame = 0; frame < totalFrames; frame++) {
-    // 1. Clear Screen (Draw Background)
+    // 1. Draw Background
     ctx.fillStyle = theme.bg;
     ctx.fillRect(0, 0, width, height);
 
-    // 2. Update & Draw Stars
+    // 2. Draw Stars
     ctx.fillStyle = '#ffffff';
     stars.forEach(star => {
       star.y += star.speed;
       if (star.y > height) star.y = 0;
-      ctx.globalAlpha = 0.5;
+      ctx.globalAlpha = 0.4;
       ctx.beginPath();
       ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
       ctx.fill();
     });
     ctx.globalAlpha = 1.0;
 
-    // 3. Update Ship Logic
+    // 3. Update Ship
     ship.x += ship.speed * ship.direction;
-    if (ship.x > width - 100 || ship.x < 100) ship.direction *= -1;
+    if (ship.x > width - 50 || ship.x < 50) ship.direction *= -1;
 
-    // Ship Shooting (Fire every 6 frames)
-    if (frame % 6 === 0) {
-      bullets.push({ x: ship.x - 10, y: ship.y - 10, speed: 12 });
-      bullets.push({ x: ship.x + 10, y: ship.y - 10, speed: 12 });
+    // 🟢 FIX 5: Slow down shooting drastically (Fires every 16 frames instead of 6)
+    if (frame % 16 === 0) {
+      // Switched to a single, powerful center laser instead of double lasers for better aiming at tiny blocks
+      bullets.push({ x: ship.x, y: ship.y - 15, speed: 9 });
     }
 
-    // 4. Update & Draw Bullets
+    // 4. Update Bullets & Collisions
     ctx.strokeStyle = theme.laser;
-    ctx.lineWidth = 3;
+    ctx.lineWidth = 2.5;
     ctx.lineCap = 'round';
     
     for (let i = bullets.length - 1; i >= 0; i--) {
       let b = bullets[i];
       b.y -= b.speed;
       
-      ctx.beginPath();
-      ctx.moveTo(b.x, b.y);
-      ctx.lineTo(b.x, b.y + 15);
-      ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(b.x, b.y); ctx.lineTo(b.x, b.y + 12); ctx.stroke();
 
-      // Check Collision with Enemies
       for (let j = enemies.length - 1; j >= 0; j--) {
         let e = enemies[j];
         if (b.x > e.x && b.x < e.x + e.size && b.y < e.y + e.size && b.y > e.y) {
           e.health--;
-          bullets.splice(i, 1); // Destroy bullet
+          bullets.splice(i, 1); 
           
           if (e.health <= 0) {
-            // SPRAWN PARTICLE EXPLOSION
-            for(let p=0; p<8; p++) {
+            for(let p=0; p<6; p++) {
               particles.push({
                 x: e.x + e.size/2, y: e.y + e.size/2,
-                vx: (Math.random() - 0.5) * 10, vy: (Math.random() - 0.5) * 10,
+                vx: (Math.random() - 0.5) * 8, vy: (Math.random() - 0.5) * 8,
                 life: 1.0
               });
             }
-            enemies.splice(j, 1); // Destroy enemy
+            enemies.splice(j, 1);
           }
           break;
         }
@@ -151,26 +150,23 @@ async function buildEngine() {
       if (b.y < 0) bullets.splice(i, 1);
     }
 
-    // 5. Draw Enemies
+    // 5. Draw Commits
     enemies.forEach(e => {
       ctx.fillStyle = e.color;
       ctx.beginPath();
-      ctx.roundRect ? ctx.roundRect(e.x, e.y, e.size, e.size, 3) : ctx.rect(e.x, e.y, e.size, e.size);
+      ctx.roundRect ? ctx.roundRect(e.x, e.y, e.size, e.size, 2) : ctx.rect(e.x, e.y, e.size, e.size);
       ctx.fill();
     });
 
-    // 6. Update & Draw Particles (Explosions)
+    // 6. Draw Particles
     for (let i = particles.length - 1; i >= 0; i--) {
       let p = particles[i];
-      p.x += p.vx;
-      p.y += p.vy;
-      p.life -= 0.05; // Fade out
-      if (p.life <= 0) {
-        particles.splice(i, 1);
-      } else {
+      p.x += p.vx; p.y += p.vy; p.life -= 0.06;
+      if (p.life <= 0) particles.splice(i, 1);
+      else {
         ctx.globalAlpha = p.life;
         ctx.fillStyle = theme.particle;
-        ctx.fillRect(p.x, p.y, 3, 3);
+        ctx.fillRect(p.x, p.y, 2.5, 2.5);
       }
     }
     ctx.globalAlpha = 1.0;
@@ -178,33 +174,25 @@ async function buildEngine() {
     // 7. Draw Ship
     ctx.save();
     ctx.translate(ship.x, ship.y);
-    
-    // Wings
     ctx.fillStyle = theme.shipWing;
-    ctx.beginPath(); ctx.moveTo(0, -15); ctx.lineTo(25, 15); ctx.lineTo(-25, 15); ctx.fill();
-    // Core
+    ctx.beginPath(); ctx.moveTo(0, -12); ctx.lineTo(20, 12); ctx.lineTo(-20, 12); ctx.fill();
     ctx.fillStyle = theme.shipBody;
-    ctx.beginPath(); ctx.moveTo(0, -20); ctx.lineTo(12, 10); ctx.lineTo(-12, 10); ctx.fill();
-    // Thruster (Flickers)
-    if (frame % 2 === 0) {
+    ctx.beginPath(); ctx.moveTo(0, -16); ctx.lineTo(10, 8); ctx.lineTo(-10, 8); ctx.fill();
+    if (frame % 4 < 2) {
       ctx.fillStyle = theme.laser;
-      ctx.beginPath(); ctx.moveTo(-6, 10); ctx.lineTo(6, 10); ctx.lineTo(0, 25); ctx.fill();
+      ctx.beginPath(); ctx.moveTo(-5, 8); ctx.lineTo(5, 8); ctx.lineTo(0, 20); ctx.fill();
     }
     ctx.restore();
 
-    // 8. Capture Frame to GIF
     encoder.addFrame(ctx);
   }
 
-  // --- FINISH AND SAVE ---
+  // --- FINISH ---
   encoder.finish();
-  const buffer = encoder.out.getData();
-  
   const dir = path.join(__dirname, '../../dist');
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-  
-  fs.writeFileSync(path.join(dir, 'royal-shooter.gif'), buffer);
-  console.log("> TRUE PHYSICS GIF GENERATED SUCCESSFULLY.");
+  fs.writeFileSync(path.join(dir, 'royal-shooter.gif'), encoder.out.getData());
+  console.log("> TRUE 52-WEEK PHYSICS GIF GENERATED SUCCESSFULLY.");
 }
 
 buildEngine().catch(console.error);
