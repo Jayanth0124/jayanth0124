@@ -81,10 +81,10 @@
 </h2>
 <br>
 
-<div align="center" style="margin-top: 40px; margin-bottom: 40px;">
-  <img src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/royal-snake.svg" alt="Royal Contribution Snake" />
-</div>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/royal-snake.svg?v=7" alt="Royal Arsenal Heavy HUD" />
+</p>
 
 <h2 align="center"> 
   𝐋 𝐄 𝐓 ' 𝐒 &nbsp;&nbsp; 𝐂 𝐎 𝐍 𝐍 𝐄 𝐂 𝐓 
