@@ -1,0 +1,10 @@
+{
+  "name": "royal-shooter-engine",
+  "version": "1.0.0",
+  "description": "God Mode GitHub Contribution Physics Engine",
+  "main": "royal-shooter.js",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "gifencoder": "^2.0.1"
+  }
+}
