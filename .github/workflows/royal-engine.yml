@@ -23,18 +23,16 @@ jobs:
         with:
           node-version: '20'
 
-      # Install OS-level dependencies required for Node Canvas
-      - name: Install Canvas Dependencies
+      # Install OS-level graphics dependencies required for Node Canvas
+      - name: Install OS Graphics Libraries
         run: sudo apt-get update && sudo apt-get install -y build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
 
       - name: Create Dist Folder
         run: mkdir -p dist
 
-      # Install the custom Engine Dependencies
-      - name: Install Engine Dependencies
-        run: |
-          cd .github/scripts
-          npm install
+      # 🚀 THE FIX: Bulletproof NPM Install (No package.json required)
+      - name: Install Node Dependencies
+        run: npm install canvas gifencoder
 
       - name: Run True Physics Engine
         env:
