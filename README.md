@@ -83,7 +83,11 @@
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Jayanth0124/Jayanth0124/output/royal-snake.svg?v=7" alt="Royal Arsenal Heavy HUD" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Jayanth0124/Jayanth0124/raw/royal-assets/royal-snake.svg?sanitize=true&v=99">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/Jayanth0124/Jayanth0124/raw/royal-assets/royal-snake.svg?sanitize=true&v=99">
+    <img src="https://github.com/Jayanth0124/Jayanth0124/raw/royal-assets/royal-snake.svg?sanitize=true&v=99" alt="Royal Arsenal Heavy HUD" />
+  </picture>
 </p>
 
 <h2 align="center"> 
