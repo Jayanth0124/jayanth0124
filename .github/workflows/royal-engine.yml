@@ -41,10 +41,10 @@ jobs:
         run: node .github/scripts/royal-enhancer.js
 
       # 3. PUSH THE MASTERPIECE
-      - name: Push to Output Branch
+      - name: Push to Royal Assets Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output
+          target_branch: royal-assets
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
