@@ -44,7 +44,7 @@
   <img src="https://stylish-tech-icons.vercel.app/api?skills=html5,css3,javascript,typescript,react,vuedotjs,nextdotjs,nodedotjs,express,python,php,firebase,tensorflow,mysql,git,github,postman,arduino,figma&v=1" alt="The Arsenal - Tech Stack" />
 </div>
 
-<br>
+<!-- <br>
 <h2 align="center"> 
   𝐃 𝐄 𝐕 𝐄 𝐋 𝐎 𝐏 𝐄 𝐑 &nbsp;&nbsp; 𝐒 𝐓 𝐀 𝐓 𝐒 
 </h2>
@@ -53,7 +53,7 @@
   <a href="https://github.com/Jayanth0124/github-futuristic-stats">
     <img src="https://futuristic-stats.vercel.app/api?username=Jayanth0124&theme=platinum&text=JAYANTH" alt="Developer Stats" />
   </a>
-</div>
+</div> -->
 
 <h2 align="center"> 
   𝐌 𝐘 &nbsp;&nbsp; 𝐒 𝐓 𝐀 𝐓 𝐒 
