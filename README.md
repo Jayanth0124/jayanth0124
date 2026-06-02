@@ -61,7 +61,7 @@
 <br>
 <div align="center">
 
-<img src="https://royal-github-stats.vercel.app/api?username=Jayanth0124&theme=royal" alt="Jayanth's Cinematic GitHub Stats" />
+<img src="https://royal-github-stats.vercel.app/api?username=Jayanth0124&theme=royal?v=4" alt="Jayanth's Cinematic GitHub Stats" />
 
 </div>
 
@@ -72,7 +72,7 @@
 <br>
 
 <div align="center">
-  <img src="https://commit-matrix.vercel.app/api?username=Jayanth0124" alt="Jayanth's Contribution Matrix" />
+  <img src="https://commit-matrix.vercel.app/api?username=Jayanth0124?v=4" alt="Jayanth's Contribution Matrix" />
 </div>
 
 
