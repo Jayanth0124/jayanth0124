@@ -22,18 +22,6 @@ jobs:
           outputs: |
             dist/snake.svg
 
-      - name: Move snake output
-        run: mv dist dist_snake # Rename the first output directory
-
-      - name: Generate pacman-contribution-graph.svg
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          # This creates a new 'dist' directory for the pacman graphs
-
-      - name: Combine outputs
-        run: cp dist_snake/snake.svg dist/ # Copy the snake svg into the final dist directory
-
       - name: Deploy to output branch
         uses: peaceiris/actions-gh-pages@v4
         with:
