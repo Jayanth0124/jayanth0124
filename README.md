@@ -2,7 +2,11 @@
   <img src="https://banners-opal.vercel.app/api/banner?type=header&text=JAYANTH&theme=royal" alt="Header Wave" />
 </div> 
 <img src="https://komarev.com/ghpvc/?username=Jayanth0124&color=00000000" alt="hidden-counter" width="0" height="0" style="display:none !important;" />
-
+<p align="center"> 
+  <a href="https://www.djayanth.site" target="_blank"> 
+    <img src="https://readme-social-icons.vercel.app/api/button?theme=royal" width="160" alt="Access Portfolio"/> 
+  </a> 
+</p>
 
 <div align="center">
   <img src="https://hero-section-gules.vercel.app/api/hero?v=1" alt="Jayanth Profile Hero" />
@@ -118,11 +122,7 @@
 
 </div>
 
-<p align="center"> 
-  <a href="https://www.jayanth.site" target="_blank"> 
-    <img src="https://readme-social-icons.vercel.app/api/button?theme=royal" width="160" alt="Access Portfolio"/> 
-  </a> 
-</p>
+
 
 <div align="center"> 
   <img src="https://banners-opal.vercel.app/api/banner?type=footer&theme=royal" alt="Footer Wave" />
