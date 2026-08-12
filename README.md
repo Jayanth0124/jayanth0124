@@ -11,32 +11,7 @@
 <div align="center">
   <img src="https://hero-section-gules.vercel.app/api/hero?v=1" alt="Jayanth Profile Hero" />
 </div>
-<!-- <table style="margin: 0 auto; text-align: center;">
-  <tr>
-    <td>
-      <a href="https://github.com/Jayanth0124/mental-wellness-chatbot">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayanth0124&repo=mental-wellness-chatbot&theme=dracula" />
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/Jayanth0124/3D-gesture-control">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayanth0124&repo=3D-gesture-control&theme=dracula" />
-      </a>
-    </td>
-  </tr> 
-  <tr>
-    <td>
-      <a href="https://github.com/Jayanth0124/image-generator">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayanth0124&repo=image-generator&theme=dracula" />
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/Jayanth0124/whatsapp-chat-parser">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Jayanth0124&repo=whatsapp-chat-parser&theme=dracula" />
-      </a>
-    </td>
-  </tr>
-</table> -->
+
 
 <br>
 <h2 align="center"> 
